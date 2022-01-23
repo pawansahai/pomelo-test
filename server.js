@@ -3,7 +3,6 @@
 const Hapi = require('@hapi/hapi');
 const https = require('https');
 const axios = require('axios');
-const test = false;
 
 const server = Hapi.server({
     port: 3000,
@@ -14,7 +13,6 @@ server.route({
     path: '/',
     handler: (request, h) => {
         const input = inputJson;
-        // console.log(input);
         const data = JSON.parse(input);
         const resp = [];
         const hashMap = new Map();
@@ -51,7 +49,6 @@ server.route({
         return buildHtml(data.data, params.page_number);
     }
 });
-if (!test)
 server.start();
 console.log('Server running on %s', server.info.uri);
 exports.init = async () => {
