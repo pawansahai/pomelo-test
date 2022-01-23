@@ -1,0 +1,22 @@
+{
+  "name": "pomelo-fashion",
+  "version": "1.0.0",
+  "description": "Hapi JS Application for Pomelo Fashion",
+  "main": "index.js",
+  "scripts": {
+    "test": "lab -v **/*.test.js",
+    "run": "node server.js"
+  },
+  "author": "Pawan Priyadarshi",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/hapi": "^20.2.1",
+    "axios": "^0.25.0",
+    "http": "0.0.1-security",
+    "https": "^1.0.0"
+  },
+  "devDependencies": {
+    "@hapi/code": "^8.0.5",
+    "@hapi/lab": "^24.5.1"
+  }
+}
